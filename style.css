@@ -30,7 +30,7 @@ body {
     padding-bottom: 30px;
     max-width: 600px;
     width: 100%;
-    background: url('./avatars/gameBg.webp');
+    background: url('gameBg.webp');
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
