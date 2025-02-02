@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Player Image Selection Screen -->
+        <div id="player-selection" class="screen active">
+           <div class="content">
+            <h1>Tic-Tac-You</h1>
+            
+            <div class="player-inputs">
+                <div class="player-input">
+                    <h2>Player 1</h2>
+                    <input type="file" id="player1-image" accept="image/jpeg, image/png">
+                    <div class="avatar-gallery">
+                        <img src="avatars/avatar1.jpg" class="default-avatar" data-player="1">
+                        <img src="avatars/avatar2.jpg" class="default-avatar" data-player="1">
+                    </div>
+                </div>
+                
+                <div class="player-input">
+                    <h2>Player 2</h2>
+                    <input type="file" id="player2-image" accept="image/jpeg, image/png">
+                    <div class="avatar-gallery">
+                        <img src="avatars/avatar3.jpg" class="default-avatar" data-player="2">
+                        <img src="avatars/avatar4.jpg" class="default-avatar" data-player="2">
+                    </div>
+                </div>
+            </div>
+            <div class="start-game-btn">
+                <button id="start-game" disabled>Start Game</button>
+            </div>
+           </div>
+        </div>
+
+        <!-- Game Board Screen -->
+        <div id="game-board" class="screen">
+            <div class="board-header">
+                <div class="turn-indicator">
+                    <span id="current-player-name">Player 1's Turn</span>
+                    <img id="current-player-image" src="" alt="Current Player">
+                </div>
+            </div>
+            
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div id="game-result" class="modal">
+                <div class="modal-content">
+                    <h2 id="result-message"></h2>
+                    <button id="play-again">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
